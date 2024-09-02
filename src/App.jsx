@@ -1,10 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./Pages/Home.jsx";
-import Second from "./Pages/Second.jsx";
+import Home from "./Pages/Home";
+import Second from "./Pages/Second";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Password_Generator">
+      {/* Set the basename here */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/second" element={<Second />} />
